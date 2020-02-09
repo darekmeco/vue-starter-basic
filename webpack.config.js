@@ -15,24 +15,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                  corejs: '3',
-                  useBuiltIns: 'entry',
-                },
-              ],
-            ],
-          },
-        },
-      },
-      {
         test: /\.html$/i,
         loader: 'html-loader',
       },
